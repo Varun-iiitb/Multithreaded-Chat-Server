@@ -1,0 +1,9 @@
+# Compiled binaries
+chat_server
+logger
+*.o
+
+# Runtime artifacts
+chat_fifo
+chat_history.log
+*.out
