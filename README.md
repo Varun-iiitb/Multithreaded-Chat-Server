@@ -91,10 +91,3 @@ The **first client to connect is the admin** (the only one allowed to run
 | `chat_server.c` | The chat server: sockets, client threads, rooms, worker pool, scheduler, FIFO writer. |
 | `logger.c` | Standalone persistence process that drains the FIFO into `chat_history.log`. |
 | `Makefile` | Builds both binaries. |
-
-## Notes
-
-This is a from-scratch learning project focused on OS concepts. Known areas for
-future hardening: pruning disconnected clients from room member lists, and
-refcounting client records to fully close a socket-fd reuse race during
-delivery.
